@@ -295,6 +295,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: inline-block;
     border-radius: 20px;
 }
+.banner .banner-button2 {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    padding: 10px 10px;
+    background: linear-gradient(
+        90.21deg,
+        rgba(170, 54, 124, 0.5) -5.91%,
+        rgba(74, 47, 189, 0.5) 111.58%
+    );
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-top: 1px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 80px;
+}
+.banner .banner-button3 {
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    padding: 10px 30px;
+    background: linear-gradient(
+        90.21deg,
+        rgba(170, 54, 124, 0.5) -5.91%,
+        rgba(74, 47, 189, 0.5) 111.58%
+    );
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-top: 1px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 80px;
+}
 .banner p {
     color: #b8b8b8;
     font-size: 18px;

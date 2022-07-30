@@ -49,7 +49,7 @@ export const NavBar = () => {
                             }
                             onClick={() => onUpdateActiveLink("tokensales")}
                         >
-                            Token Sales
+                            Transfer Token
                         </Nav.Link>
                         <Nav.Link
                             href="#roadmap"
