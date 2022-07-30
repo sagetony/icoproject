@@ -19,8 +19,8 @@ const init = async () => {
 
 export const Banner = () => {
           const [contract, setContract] = useState()
-          const [value, setValue] = useState(0);
-        const [userAddress, setUserAddress] = useState("")
+          const [amount, setAmount] = useState(0)
+        const [userAddress, setUserAddress] = useState("");
         // const [symbol, setSymbol] = useState("HRV")
         useEffect(() => {
             const setup = async () => {
@@ -40,16 +40,17 @@ export const Banner = () => {
 
             setup()
         }, [])
-        const handleChange = (e) => setValue(e.target.value)
-        const handleWallet = (e) => setValue(e.target.value)
+        const handleChange = (e) => setAmount(e.target.value)
+        const handleWallet = (e) => setUserAddress(e.target.value)
 
         const submit = async (e) => {
-          //  const supply = await contract.transfer(userAddress, value);
-            setValue(e.target.value)
+        
+           await contract.transfer(userAddress, amount);
+             setAmount(e.target.value)
             setUserAddress(e.target.userAddress)
-            console.log(userAddress, value)
+            console.log(userAddress, amount)
 
-            alert(`Successfully transferred ${value} to ${userAddress}🎉`)
+            alert(`Successfully transferred ${amount} to ${userAddress}🎉`)
         }
        
 return (
@@ -66,7 +67,7 @@ return (
                <p>
                 Sage Token is a public blockchain protocol deploying a suite of algorithmic decentralized stablecoins which underpin a thriving ecosystem that brings DeFi to the masses.
               </p>
-              <input className ="banner-button2" value= {value} onChange={handleChange}placeholder="Amount of token"></input>
+              <input className ="banner-button2" value= {amount} onChange={handleChange} placeholder="Amount of token"></input>
               <input className ="banner-button3" value= {userAddress} onChange={handleWallet}placeholder="Enter Wallet Address"></input>
               <button className ="banner-button" onClick={submit}>Transfer Token<ArrowRightCircle size={25} /></button>
           </Col>
