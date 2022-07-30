@@ -79,8 +79,8 @@ return (
                         <Row>
                             <Col xl={12} md={12} xs={12}>
                                  <div className="block-text">
-                                    <h3 className="heading">10000000000 SAG has be minted!</h3>
-                                    <p className="fs-17">We plan on carry out an ICO in the next few months you can transfer SAG tokens from our platform. ICO will be carried out next month.</p>
+                                    <h3 className="heading">10000000000 SAG has been minted!</h3>
+                                    <p className="fs-17">We plan on carrying out an ICO in the next few months you can transfer SAG tokens from our platform. ICO will be carried out next month.</p>
                                 </div>
                             </Col>
                              {/* <Col xl={7} md={7} xs={12}>
