@@ -41,6 +41,7 @@ export const Banner = () => {
             setup()
         }, [])
         const handleChange = (e) => setValue(e.target.value)
+        const handleWallet = (e) => setValue(e.target.value)
 
         const submit = async (e) => {
           //  const supply = await contract.transfer(userAddress, value);
@@ -66,7 +67,7 @@ return (
                 Sage Token is a public blockchain protocol deploying a suite of algorithmic decentralized stablecoins which underpin a thriving ecosystem that brings DeFi to the masses.
               </p>
               <input className ="banner-button2" value= {value} onChange={handleChange}placeholder="Amount of token"></input>
-              <input className ="banner-button3" value= {userAddress} placeholder="Enter Wallet Address"></input>
+              <input className ="banner-button3" value= {userAddress} onChange={handleWallet}placeholder="Enter Wallet Address"></input>
               <button className ="banner-button" onClick={submit}>Transfer Token<ArrowRightCircle size={25} /></button>
           </Col>
         </Row>
